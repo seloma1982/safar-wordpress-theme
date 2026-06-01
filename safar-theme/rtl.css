@@ -1,0 +1,144 @@
+/*
+Theme Name: سفر - بوابة الفرص العالمية
+RTL Stylesheet
+*/
+
+/* RTL specific styles */
+html[dir="rtl"],
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Flip floats */
+.rtl .alignleft {
+    float: right;
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.rtl .alignright {
+    float: left;
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+/* Navigation */
+.rtl .nav-menu li {
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.rtl .nav-menu li:last-child {
+    margin-left: 0;
+}
+
+/* Cards */
+.rtl .card-meta {
+    flex-direction: row-reverse;
+}
+
+/* Breadcrumbs */
+.rtl .breadcrumbs .separator {
+    transform: scaleX(-1);
+}
+
+/* Post Navigation */
+.rtl .nav-link.prev {
+    text-align: left;
+}
+
+.rtl .nav-link.next {
+    text-align: right;
+}
+
+/* Sidebar */
+.rtl .widget ul {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Comments */
+.rtl .comment .avatar {
+    float: right;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* Search Form */
+.rtl .search-form input {
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.rtl .search-form button {
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+/* Newsletter */
+.rtl .newsletter-form {
+    flex-direction: row-reverse;
+}
+
+/* Footer */
+.rtl .footer-links li {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* Floating Elements */
+.rtl .floating-icon {
+    animation-direction: reverse;
+}
+
+/* Buttons with Icons */
+.rtl .btn svg {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* List Items */
+.rtl ul,
+.rtl ol {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+/* Dropdown Menus */
+.rtl .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+/* Social Share */
+.rtl .social-share {
+    flex-direction: row-reverse;
+}
+
+/* Progress Bar */
+.rtl .progress-bar {
+    left: auto;
+    right: 0;
+}
+
+/* Flip icons that need to be mirrored in RTL */
+.rtl .icon-flip {
+    transform: scaleX(-1);
+}
+
+/* Swiper/Carousel */
+.rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+    transform: rotate(180deg);
+}
+
+.rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+    transform: rotate(180deg);
+}
+
+/* Toggle Switches */
+.rtl .toggle-switch {
+    transform: scaleX(-1);
+}

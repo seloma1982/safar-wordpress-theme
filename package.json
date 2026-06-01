@@ -1,0 +1,16 @@
+{
+  "name": "safar-wordpress-theme",
+  "version": "1.0.0",
+  "description": "قالب ووردبرس احترافي للمنح الدراسية وفرص العمل",
+  "scripts": {
+    "build": "echo '✅ WordPress Theme is ready! No build step required.' && exit 0",
+    "lint:css": "stylelint 'style.css' 'rtl.css'",
+    "lint:js": "eslint 'assets/js/*.js'",
+    "zip": "cd .. && zip -r safar-theme-v1.0.0.zip safar-theme -x '*.git*' -x '*.DS_Store'"
+  },
+  "devDependencies": {
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.57.0"
+  }
+}
